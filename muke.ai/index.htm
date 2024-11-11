@@ -1,0 +1,506 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muke AI</title>
+    <meta name="description" content="Muke.AI is the best AI creation platform. We are committed to building the most powerful AI tool station through which you can create the most fashionable and popular original works.">
+    <meta name="keywords" content="Face Swap, Undress AI">
+    <link rel="icon" href="assets/home/image/logo.webp" id="favicon">
+    <style>
+        body,
+        html {
+            padding: 0;
+            margin: 0;
+        }
+
+        .button-black {
+            background: #0f1729;
+            color: #fff;
+            width: 120px;
+            height: 36px;
+            line-height: 36px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            text-align: center;
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .button-grey {
+            background: #f9fafb;
+            color: #384150;
+            border: 1px solid rgb(229 231 235);
+            width: 100px;
+            height: 36px;
+            line-height: 36px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            text-align: center;
+            display: inline-block;
+        }
+
+        .top-left {
+            vertical-align: middle;
+            display: inline-block;
+            width: 49%;
+        }
+
+        .top-right {
+            vertical-align: middle;
+            display: inline-block;
+            width: 50%;
+        }
+
+        .top-right img {
+            width: 80%;
+        }
+
+        .line {
+            border-top: 1px solid #e5e7eb;
+            display: block;
+            margin-top: 30px;
+        }
+
+        .view-btn {
+            margin-bottom: 20px;
+            background: #F068C8;
+            color: #fff;
+            width: 235px;
+            height: 50px;
+            border-radius: 30px;
+            line-height: 50px;
+            font-size: 20px;
+            font-weight: 900;
+        }
+
+        .view-btn a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .view-feature-btn {
+            margin-left: 10px;
+        }
+
+        .logo {
+            height: 32px;
+            margin-top: 8px;
+            cursor: pointer;
+        }
+
+        .box-header {
+            height: 50px;
+            line-height: 50px;
+            border-bottom: 1px solid #d2d4d6;
+            padding: 0 15px;
+            background: #fff;
+        }
+
+        .box-one {
+            height: 160px;
+            padding-top: 20px;
+            color: #000000;
+            margin-bottom: 40px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .box-one>div {
+            padding: 50px;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .box-one>div,
+        .box-other>div {
+            vertical-align: middle;
+        }
+
+        .box-other {
+            padding: 50px;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .box-footer {
+            width: 100%;
+            height: 300px;
+            background-color: #F068C8;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin-top: 100px;
+        }
+
+        .box-footer-box {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            height: 200px;
+            width: 80%;
+        }
+
+        .box-footer-logo {
+            position: relative;
+            width: 20%;
+            height: 75%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .box-footer-support {
+            position: relative;
+            width: 20%;
+            height: 75%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding-top: 20px;
+        }
+
+        .box-footer-support > div:nth-child(1) {
+            font-weight: 600;
+            font-size: 20px;
+            color: #FFFFFF;
+            height: 60px;
+            width: 100%;
+        }
+        .box-footer-support > div:nth-child(2) {
+            font-size: 16px;
+            color: #FFFFFF;
+            height: 50px;
+            width: 100%;
+        }
+
+        .box-footer-support a {
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+
+        .title-api {
+            margin-bottom: 20px;
+            color: #3d3d3d;
+            font-size: 16px;
+        }
+
+        .contact {
+            float: right;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+
+        .contact:hover {
+            color: #409eff;
+        }
+
+        .popup {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 14px rgb(119 22 196);
+            padding: 20px;
+            max-width: 400px;
+            width: 100%;
+            position: relative;
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .popup h2 {
+            margin-top: 0;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            color: #999;
+            font-size: 20px;
+        }
+
+        .close-btn:hover {
+            color: #333;
+        }
+
+        .features-info {
+            line-height: 30px;
+        }
+
+        .top-left > .features-info {
+            padding: 0 50px 0 0px;
+        }
+
+        @media screen and (max-width: 900px) {
+
+            .top-left,
+            .top-right {
+                width: 100%;
+            }
+
+            .top-right {
+                margin-top: 20px;
+            }
+
+            .popup {
+                width: 80%;
+            }
+        }
+
+        .muke-navigate {
+            position: absolute;
+            display: inline-block;
+            margin-left: 100px;
+        }
+
+        .muke-navigate a{
+            width: 100px;
+            margin-right: 48px;
+            letter-spacing: 0px;
+            font: normal normal 600 16px / 24px Titillium Web;
+            color: #39325a;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        @media screen and (max-width: 450px) {
+            .muke-navigate {
+                margin-left: 20px;
+            }
+            .muke-navigate a{
+                width: 85px;
+                margin-right: 15px;
+                font-size: 14px;
+            }
+            .box-other {
+                padding: 50px 10px;
+            }
+            .box-footer-logo {
+                width: 60%;
+                align-items: flex-start;
+            }
+            .box-footer-support {
+                width: 60%;
+            }
+            .box-footer-box {
+                flex-direction: column;
+                min-width: 200px;
+            }
+            .box-footer-support > div:nth-child(1) {
+                text-align: left;
+            }
+            .box-footer-support > div:nth-child(2) {
+                text-align: left;
+            }
+            .top-left > .features-info {
+                padding: 0px;
+            }
+            .top-right img {
+                width: 100%;
+            }
+        }
+        @media screen and (min-width: 450px) {
+            .muke-navigate {
+                margin-left: 100px;
+            }
+            .muke-navigate a{
+                width: 100px;
+                margin-right: 48px;
+                font-size: 16px;
+            }
+            .box-other {
+                padding: 150px;
+            }
+            .box-footer-logo {
+                width: 20%;
+                align-items: center;
+            }
+            .box-footer-support {
+                width: 20%;
+            }
+            .box-footer-box {
+                flex-direction: row;
+                min-width: 600px;
+            }
+            .box-footer-support > div:nth-child(1) {
+                text-align: center;
+            }
+            .box-footer-support > div:nth-child(2) {
+                text-align: center;
+            }
+            .top-left > .features-info {
+                padding: 0px 50px 0px 0px;
+            }
+            .top-right img {
+                width: 80%;
+            }
+        }
+    </style>
+    <script type="application/ld+json">
+        {
+            "@context" : "https://schema.org",
+            "@type" : "WebSite",
+            "name" : "Muke AI",
+            "url" : "https://muke.ai"
+        }
+    </script>
+    <script>
+        function jump(url) {
+            window.open(url, "_blank");
+        }
+        function contactEmit() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "block";
+        }
+
+        function closePopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "none";
+        }
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async="" src="gtag/js?id=G-98VFQLVJ9T"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-98VFQLVJ9T');
+    </script>
+</head>
+
+<body>
+    <div>
+        <div class="popup" id="popup">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h2>Contact Us</h2>
+            <p>Email: <a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="4e3c2b232f252b3c602f270e29232f2722602d2123">[email&#160;protected]</a></p>
+        </div>
+        <div class="box-header">
+            <img onclick="jump('https://muke.ai/')" class="logo" src="assets/home/image/logo-word.webp">
+            <!-- <div class="contact" onclick="contactEmit()">
+                Contact Us
+            </div> -->
+            <div class="muke-navigate">
+                <a href="face-swap/index.htm">Face Swap</a>
+                <a href="undress-ai/index.htm">Undress AI</a>
+            </div>
+        </div>
+        <div class="box-one">
+            <div>
+                <h1>
+                    Muke.AI
+                </h1>
+            </div>
+        </div>
+        <div class="box-other">
+            <div class="top-left">
+                <h1>Undress AI</h1>
+                <div class="button-grey view-btn">
+                    <a href="undress-ai/index.htm">Undress Now</a>
+                </div>
+                <div class="features-info">
+                    Muke's Undress AI is the best undress app. Using Muke AI Undress upload a photo to remove clothes, you can make Anyone Deepnude. Undressing ai allows you to see anyone naked. Explore the power of Nudify AI. Try DeepFake AI Tools for free now!
+                </div>
+            </div>
+            <div class="top-right">
+                <img src="image/undress-ai/seo/undress-main.jpg">
+            </div>
+        </div>
+        <i class="line"></i>
+        <div class="box-other">
+            <div class="top-right">
+                <img src="assets/home/image/undress-ai.webp">
+            </div>
+            <div class="top-left">
+                <h1>AI Sexy Portrait</h1>
+                <div class="button-grey view-btn">
+                    <a href="sexy-portrait/index.htm">Generate Portrait</a>
+                </div>
+                <div class="features-info">
+                    Explore the free Muke AI Sexy Portrait! Easily create seductive ai sexy photo. You only need to enter a simple prompt to generate visually stunning images. Muke AI uses advanced algorithms to quickly generate sexy portraits for you. Whether it is used in a virtual fitting room or for entertainment creation, AI Sexy Portrait Generator brings you an unparalleled new experience.
+                </div>
+            </div>
+        </div>
+        <i class="line"></i>
+        <div class="box-other">
+            <div class="top-left">
+                <h1>AI Girlfriend</h1>
+                <div class="button-grey view-btn">
+                    <a href="ai-girlfriend/index.htm">Chat Now</a>
+                </div>
+                <div class="features-info">
+                    The AI Girlfriend is an entertaining and flirtatious dating simulator. Engaging in conversation with the No Filter AI Chatbot allows you to experience the utmost romance curated by Characters AI, immersing yourself in immersive role-playing scenarios for an unparalleled and exquisite experience.
+                </div>
+            </div>
+            <div class="top-right">
+                <img src="assets/home/image/ai-girlfriend.webp">
+            </div>
+        </div>
+        <i class="line"></i>
+        <div class="box-other">
+            <div class="top-right">
+                <img src="assets/home/image/face-swap.webp">
+            </div>
+            <div class="top-left">
+                <h1>Face Swap</h1>
+                <div class="button-grey view-btn">
+                    <a href="face-swap/index.htm">Face Swap Now</a>
+                </div>
+                <div class="features-info">
+                    Face swap technology adds a playful twist to entertainment, you can swap faces with celebrities, friends, or even fictional characters. This enables users to create humorous memes photos (meme photo generator), share funny videos, or even imagine themselves in famous movie scenes. Moreover, face swap can be used to create engaging content for social media platforms, attracting likes, shares, and comments from followers.
+                </div>
+            </div>
+        </div>
+        <i class="line"></i>
+        <div class="box-other">
+            <div class="top-left">
+                <h1>AI Boobs Enlarger</h1>
+                <div class="button-grey view-btn">
+                    <a href="ai-boobs-enlarger/index.htm">Boobs Enlarger Now</a>
+                </div>
+                <div class="features-info">
+                    Use AI Boobs Enlarger to enlarge the boobs in any picture with a single click and experience the allure of big boobs naked women. Enhance your photos for a more confident social media presence. Our tool uses cutting-edge AI algorithms to provide realistic and high-quality ai generated boobs. Improve your profile pictures to make a great first impression. Enhance your photos in just a few clicks without any technical knowledge required.
+                </div>
+            </div>
+            <div class="top-right">
+                <img src="assets/home/image/boobs-enlarger.webp">
+            </div>
+        </div>
+        <div class="box-footer">
+            <div class="box-footer-box">
+                <div class="box-footer-logo">
+                    <img onclick="jump('https://muke.ai/')" class="logo" src="assets/home/image/logo-word.webp">
+                </div>
+                <div class="box-footer-support">
+                    <div>
+                        Support
+                    </div>
+                    <div>
+                        <a href="blog/index.htm">Blog</a>
+                    </div>
+                    <div>
+                        <a href="ai-solutions/index.htm">AI Solutions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+
+</html>

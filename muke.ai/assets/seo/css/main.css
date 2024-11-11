@@ -1,0 +1,1116 @@
+﻿@font-face {
+    font-family: 'Trebuchet MS';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/trebuc.woff')format('woff');
+    font-display: swap;
+} 
+
+html, body {
+    font-family: 'Trebuchet MS', Poppins, helvetica, PingFang SC, Arial !important;
+}
+* {
+    box-sizing: border-box;
+}
+
+.muke-container {
+    line-height: 30px;
+}
+
+html,
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    line-height: 40px;
+}
+
+h2 {
+    text-align: center;
+    margin: 80px 0;
+}
+
+h3 {
+    margin: 10px 0;
+}
+
+svg {
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding-left: 15px;
+    text-align: left;
+}
+
+.muke-font-white {
+    color: #fff !important;
+}
+
+.muke-container-main {
+    padding: 50px 0;
+    background-image: linear-gradient(to top, #744DFF 0%, #ff6beb 100%);
+    color: #fff;
+}
+
+.muke-container-main-center {
+    width: 1192px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.muke-container-main-video {
+    width: 600px;
+    float: right;
+}
+
+.muke-container-main-video img {
+    max-width: 600px;
+    max-height: 600px;
+}
+
+.muke-container-main-center video {
+    width: 600px;
+}
+
+.muke-container-main-text {
+    padding-right: 30px;
+}
+
+.muke-container-feature {
+    margin-top: 300px;
+}
+
+.muke-container-feature-text-left {
+    padding-right: 30px;
+    width: calc(100% - 440px);
+}
+
+.muke-container-feature-text-right {
+    padding-left: 30px;
+}
+
+.muke-container-main-button {
+    background-color: #534FF8;
+    padding: 12px 25px 12px 25px;
+    border-radius: 55px 55px 55px 55px;
+    text-decoration: none;
+    background: rgba(255, 255, 255, .9);
+    color: #262b33;
+    margin-top: 20px;
+    display: inline-block;
+    font-weight: 600;
+}
+
+.muke-container-feature-button {
+    background-color: #409EFF;
+    padding: 12px 25px 12px 25px;
+    border-radius: 55px 55px 55px 55px;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 20px;
+    display: none;
+    font-weight: 600;
+}
+
+.muke-container-feature-center-button {
+    background-color: #409EFF;
+    padding: 12px 25px 12px 25px;
+    border-radius: 55px 55px 55px 55px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    font-weight: 600;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.muke-container-feature-center {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: space-between;
+    margin-bottom: 300px;
+}
+
+.muke-container-feature-video-right,
+.muke-container-feature-video-left {
+    width: 400px;
+}
+
+.muke-container-feature-center video,
+.muke-container-feature-center img {
+    max-height: 300px;
+    width: auto;
+    max-width: 100%;
+}
+
+.muke-container-feature-center:nth-child(2n) .muke-container-feature-text-left {
+    order: 2;
+}
+
+.muke-container-feature-center h2 {
+    text-align: left;
+    margin: 0;
+}
+
+.muke-container-people {
+    padding-top: 20px;
+    color: #fff;
+    margin-top: 30px;
+    position: relative;
+}
+
+.muke-container-people-background {
+    background-image: url(https://remaker.ai/userspace/saasbox/image/muke-logo/bg.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.muke-container-cta {
+    padding: 20px 0;
+}
+
+.muke-container-people-background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 255, 0.5);
+    pointer-events: none;
+}
+
+.muke-container-other-tools {
+    text-align: center;
+    margin-top: 300px;
+}
+
+.muke-container-why-center,
+.muke-container-people-center,
+.muke-container-other-tools-center {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.muke-container-people-star-car {
+    position: relative;
+    right: 5px;
+}
+
+.muke-container-why-item {
+    padding: 20px;
+    width: 33%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+.muke-container-why h2 {
+    margin-top: 0;
+}
+
+.muke-container-why {
+    padding-top: 60px;
+    margin-top: 40px;
+}
+
+.muke-container-why-img {
+    background: #161619;
+    color: #fff;
+}
+
+.muke-container-why-icon-img img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.muke-container-why-icon {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.muke-container-why-icon-img {
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.muke-container-step-center,
+.muke-container-effects,
+.muke-container-faq {
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 300px;
+}
+
+.muke-container-effects {
+    text-align: center;
+}
+
+.muke-container-head-center {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.muke-container-step-item {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.muke-container-step-item>span {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    flex-shrink: 0;
+    text-align: center;
+    margin-right: 10px;
+    color: #fff;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.muke-container-step-item>span::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 48px;
+    bottom: -10rem;
+    margin-left: -1px;
+    border-left: 2px dashed #eaeff4;
+}
+
+.muke-container-step-item:last-child>span::before {
+    bottom: 0;
+}
+
+.muke-container-step-item>div {
+    display: inline-block;
+    width: calc(100% - 50px);
+    padding-left: 5px;
+    vertical-align: middle;
+}
+
+.muke-container-step-img {
+    width: 600px;
+    float: right;
+}
+
+.muke-container-step-center>div {
+    display: inline-block;
+    width: 394px;
+}
+
+.muke-container-step-center {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.muke-container-faq-panel {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid #eee;
+    font-size: 14px;
+}
+
+.muke-container-faq-accordion {
+    background-color: #f9fafb;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 16px;
+}
+
+.muke-container-people-item {
+    display: inline-block;
+    width: 30%;
+    padding: 38px 32px 38px 32px;
+    margin: 10px 15px 15px 15px;
+    border-radius: 20px 20px 20px 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.05);
+}
+
+.muke-container-people-message {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    color: #303030;
+    margin: 17px 0 12px 0;
+    min-height: 130px;
+}
+
+.muke-container-people-name {
+    font-size: 16px;
+    font-weight: 700;
+    color: #121933;
+    margin-top: 15px;
+}
+
+.muke-container-people-title {
+    font-size: 14px;
+    color: #353535;
+}
+
+.muke-container-other-tools-item {
+    display: inline-block;
+    width: 300px;
+    border-radius: 20px 20px 20px 20px;
+    margin: 10px 15px 15px 15px;
+    border-radius: 20px 20px 20px 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 15px 0px rgb(168 156 156);
+    text-align: center;
+    position: relative;
+}
+
+.muke-container-other-tools-bottom-rounded {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
+
+
+.muke-container-other-tools-item video,
+.muke-container-other-tools-item img {
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+.muke-container-other-tools-item video {
+    height: 226px;
+}
+
+.muke-container-other-tools-bottom {
+    font-size: 14px;
+    text-align: center;
+    display: inline-block;
+    background: #308ef2;
+    backdrop-filter: blur(10px);
+    color: #fff;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 0px 10px;
+    line-height: 9px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.muke-container-head {
+    position: fixed;
+    z-index: 2000;
+    height: 60px;
+    min-height: 60px;
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+    top: 0;
+    box-shadow: 0 10px 10px -6px rgba(170, 170, 170, 0.5);
+    width: 100%;
+}
+
+.muke-container-head-icon {
+    display: none;
+}
+
+.muke-container-head-logo {
+    height: 50px;
+    margin-top: 5px;
+}
+
+.muke-container-middle {
+    margin-top: 60px;
+}
+
+.muke-container-head-link {
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-block;
+    height: 60px;
+    line-height: 68px;
+    vertical-align: text-bottom;
+    margin: 0 20px;
+    text-decoration: none;
+}
+
+/* muke-container-head-link-dropdown */
+.muke-container-head-link-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.muke-container-head-link-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 50px;
+    line-height: 30px;
+    border: 1px solid #efefef;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.muke-container-head-link-dropdown-content a {
+    color: #1b1e24;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: 400;
+}
+
+.muke-container-head-link-dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.muke-container-head-link-dropdown:hover .muke-container-head-link-dropdown-content {
+    display: block;
+}
+
+.muke-container-head-link-dropbtn svg {
+    font-weight: 400;
+    position: relative;
+    bottom: 2px;
+}
+
+.muke-container-head-logo-div {
+    width: 134px;
+    height: 50px;
+    display: inline-block;
+}
+
+#muke-back-to-top {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: #72c139;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    /* Initially hidden */
+    font-size: 24px;
+}
+
+.muke-container-footer {
+    background-color: #fafafa;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+.muke-container-footer>div {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.muke-container-footer-logo-div,
+.muke-container-footer-url {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.muke-container-footer-logo-div {
+    width: auto;
+    padding-left: 0;
+}
+
+.muke-container-footer-url {
+    width: calc(100% - 260px);
+}
+
+.muke-container-footer-logo {
+    width: 150px;
+}
+
+.muke-container-footer-url>div {
+    display: inline-block;
+    width: calc(50% - 10px);
+    padding-left: 100px;
+    line-height: 30px;
+    vertical-align: top;
+}
+
+.muke-container-footer-nav-link {
+    display: block;
+    color: #888;
+}
+
+.muke-sli-two-container {
+    position: relative;
+    width: 100%;
+    height: 300px; 
+    overflow: hidden;
+}
+
+.muke-sli-two-image-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.muke-sli-two-image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.muke-sli-two-slider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background-color: #fff;
+    cursor: ew-resize;
+    z-index: 2;
+}
+
+.muke-sli-two-image1 {
+    clip-path: inset(0 0 0 0);
+    /* 默认展示整张图片1 */
+    /* transition: clip-path 0.3s ease; */
+}
+
+/* 禁止文本选中样式 */
+.muke-sli-two-no-select {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.muke-sli-two-slider-div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+
+.muke-sli-two-slider-icon {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 50%;
+    left: -12px;
+    border-radius: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background: #fff;
+}
+
+.muke-container-effects-center {
+    -webkit-flex: 1 1 33.3333333333%;
+    flex: 1 1 33.3333333333%;
+    max-width: 33.3333333333%;
+    padding-right: 16px;
+    padding-left: 16px;
+    margin-bottom: 30px;
+}
+
+.muke-container-effects-p {
+    margin-bottom: 30px;
+    text-align: center;
+    color: #606266;
+}
+
+.muke-container-effects-center-functional {
+    width: 100%;
+}
+
+.muke-container-effects-center-main {
+    background: #fff;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, .05);
+}
+
+.muke-container-effects-center-main-noborder {
+    border: none;
+}
+
+.muke-container-effects-center-main-mes {
+    padding: 10px;
+}
+
+.muke-container-effects-center-main-mes div {
+    color: #5a5f69;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.muke-container-effects-box {
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.muke-container-effects-center img {
+    Object-fit: cover;
+    width: 100%;
+    height: 225px;
+}
+
+.muke-container-functional-img {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.muke-container-functional-img-div {
+    text-align: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    width: 100%;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    grid-gap: 10px;
+    gap: 10px;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.muke-container-functional-img-item {
+    width: 23%;
+    margin: 0 10px;
+    margin-top: 20px;
+}
+
+.muke-container-feature-tab {
+    cursor: pointer;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.muke-container-effects-center-main-functional {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    width: 100%;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    grid-gap: 10px;
+    gap: 10px;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.muke-container-feature-tab-active {
+    background: #409EFF;
+    color: #fff;
+    border-radius: 16px;
+}
+
+.muke-container-effects-center-main-step {
+    text-align: left;
+    height: 100%;
+}
+
+.muke-carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 0 15px #8f8790;
+    border-radius: 15px;
+}
+
+.muke-carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    padding-bottom: 40px;
+}
+
+.muke-carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.muke-carousel img {
+    width: 100%;
+    display: block;
+}
+
+.muke-carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.muke-carousel-indicators-car {
+    bottom: 20px;
+}
+
+.muke-carousel-indicator {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.muke-carousel-indicator.active {
+    background-color: white;
+}
+
+.muke-carousel-in-active {
+    background-color: #409EFF;
+}
+
+img.muke-container-people-rounded {
+    width: 200px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.muke-container-effects-center-main-name {
+    color: #101010;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.muke-container-people-center-main-mes {
+    width: calc(100% - 220px);
+    display: inline-block;
+    text-align: left;
+}
+
+.muke-carousel-slide-people {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.muke-container-people-car {
+    padding-bottom: 50px;
+}
+
+.muke-container-other-tools-bottom-img {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 0;
+    width: 100%;
+    background: rgba(43, 43, 43, .8);
+    border-radius: initial;
+    padding: 10px 0;
+    margin: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.muke-container-footer-copyright {
+    font-size: 12px;
+    padding-top: 10px;
+    color: rgba(8, 8, 8, 0.5);
+    text-align: center;
+    border-top: 1px solid rgba(117, 117, 117, 0.09);
+    max-width: 100%;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 1050px) {
+    .muke-container-main-button {
+        margin-bottom: 20px;
+    }
+
+    body,
+    html {
+        width: 100%;
+    }
+
+    .muke-container-main-video {
+        display: block;
+        float: none;
+    }
+
+    .muke-container-main-video img {
+        width: 100%;
+    }
+
+    .muke-container-main-center {
+        display: block;
+        width: 100%;
+    }
+
+    .muke-container-main-center video {
+        width: 100%;
+    }
+
+    .muke-container-main-video {
+        width: 96%;
+        margin: 0 auto;
+    }
+
+    .muke-container-main-text {
+        padding-right: 0;
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    .muke-container-feature {
+        margin-top: 0px;
+        padding: 0 10px;
+    }
+
+    .muke-container-functional-img-item {
+        width: 43%;
+    }
+
+    .muke-container-feature-text-left {
+        width: 100%;
+    }
+
+    .muke-sli-two-container {
+        height: 200px;
+    }
+    
+    .muke-container-feature-center video, .muke-container-feature-center img {
+        height: auto;
+    }
+
+    .muke-sli-two-image-wrapper {
+        height: 200px;
+    }
+
+    h2 {
+        margin: 40px 0;
+        margin-bottom: 20px;
+        padding: 0 10px;
+    }
+
+
+    .muke-container-feature-center {
+        margin-bottom: 0;
+        display: block;
+        width: calc(100% - 40px);
+        border-radius: 20px 20px 20px 20px;
+        background-color: #FFFFFF;
+        box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.05);
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .muke-container-feature-button, .muke-container-feature-center-button {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .muke-container-feature-text-left {
+        padding-right: 0;
+    }
+
+    .muke-container-feature-text-right {
+        padding-left: 0;
+    }
+
+    .muke-container-feature-center:nth-child(2n) .muke-container-feature-text-left {
+        order: 0;
+    }
+
+    /* .muke-container-feature-center video,
+    .muke-container-feature-center img {
+        width: 100%;
+    } */
+
+    .muke-container-feature-video-right,
+    .muke-container-feature-video-left {
+        width: auto;
+    }
+
+    .muke-container-effects {
+        width: 100%;
+    }
+
+    .muke-container-step-center {
+        display: block;
+    }
+
+    .muke-container-effects-box {
+        display: block;
+    }
+
+    .muke-container-step-center {
+        width: 90%;
+        display: block;
+    }
+
+    .muke-container-effects-center {
+        width: 90%;
+        max-width: fit-content;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .muke-container-other-tools {
+        margin-top: 0px;
+    }
+    .muke-container-faq {
+        margin-top: 0px;
+    }
+
+    .muke-container-why-center,
+    .muke-container-people-center,
+    .muke-container-other-tools-center,
+    .muke-container-step-center,
+    .muke-container-faq {
+        width: 100%;
+    }
+
+    .muke-container-why-item,
+    .muke-container-people-item,
+    .muke-container-other-tools-item {
+        width: auto;
+    }
+
+    .muke-container-faq>div {
+        width: 96%;
+        margin: 0 auto;
+    }
+
+    .muke-container-step-img {
+        float: none;
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .muke-container-other-tools-item {
+        height: auto;
+        width: 94%;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .muke-container-head-link {
+        font-size: 14px;
+        margin-left: 5px;
+        margin-right: 0;
+    }
+
+    .muke-container-head-logo {
+        display: none;
+    }
+
+    .muke-container-head-icon {
+        display: block;
+        height: 30px;
+        margin-top: 12px;
+        margin-left: 10px;
+    }
+
+    .muke-container-head-logo-div {
+        width: 40px;
+    }
+
+    .muke-container-head-link-dropdown-content {
+        right: 20px;
+    }
+
+    .muke-container-footer-logo-div {
+        display: block;
+    }
+
+    .muke-container-footer-url {
+        width: 100%;
+    }
+
+    .muke-container-footer-url>div {
+        width: auto;
+        font-size: 14px;
+        padding-left: 10px;
+    }
+
+    .muke-container-feature-video-left {
+        margin-bottom: 10px;
+    }
+
+    .muke-carousel {
+        max-width: 90%;
+    }
+
+    .muke-carousel-slide-people {
+        display: block;
+    }
+
+    .muke-container-people-center-main-mes {
+        width: 100%;
+    }
+}
+
